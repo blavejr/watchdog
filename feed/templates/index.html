@@ -1,3 +1,11 @@
+
+<form method='POST' action= ''>{% csrf_token %}
+    {{ form }}
+
+    <input type='submit' value="Tell Your Story">
+</form>
+
+
 {% if latest_post_list %}
     <ul>
     {% for post in latest_post_list %}
@@ -7,4 +15,6 @@
     </ul>
 {% else %}
     <p>No posts to show are available.</p>
+    {{ user }}
+    {{ request.user }}
 {% endif %}
