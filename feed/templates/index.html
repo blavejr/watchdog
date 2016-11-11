@@ -1,5 +1,6 @@
 Hello,  
 {{ user.first_name }}
+<li><a href="{% url 'feed:logout_view' %}">Logout</a></li>
   <h1>New post</h1>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}

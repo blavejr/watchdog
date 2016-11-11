@@ -26,6 +26,9 @@ SECRET_KEY = "q#si3gg#p1wu#xo7#al*$!q9vx*jm2(ju870)+$7ur)=)c_0^3"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+#Login 
+LOGIN_REDIRECT_URL = '/'
+
 # Application definition
 
 INSTALLED_APPS = [
